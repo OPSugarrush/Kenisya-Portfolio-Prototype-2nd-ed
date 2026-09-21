@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="histology">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kenisya Saravenen | Biomedical Sciences research portfolio</title>
+  <meta name="description" content="Research portfolio of Kenisya Saravenen, a Biomedical Sciences student: publications, science writing, posters and talks, and laboratory methods." />
+  <meta name="theme-color" content="#f2eff7" />
+  <meta property="og:title" content="Kenisya Saravenen | Biomedical Sciences research portfolio" />
+  <meta property="og:description" content="Publications, articles, posters and talks by Kenisya Saravenen." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap" rel="stylesheet" />
+
+  <!-- Set the colour theme before first paint so the page never flashes the wrong one -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'histology' && t !== 'fluorescence') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'fluorescence' : 'histology';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kenisya Saravenen",
+      "jobTitle": "Biomedical Sciences student",
+      "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Example" },
+      "sameAs": ["https://orcid.org/0000-0000-0000-0000"]
+    }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ***** Header ***** -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="Kenisya Saravenen, back to top">
+        <span class="brand__mark" aria-hidden="true">KS</span>
+        <span class="brand__name">Kenisya Saravenen</span>
+      </a>
+
+      <nav class="nav" aria-label="Sections">
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#posters">Posters</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#background">Background</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+          <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <path d="M10 2a8 8 0 0 1 0 16z" fill="currentColor" />
+        </svg>
+        <span>Fluorescence view</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ***** Hero ***** -->
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <h1 id="hero-title">Kenisya Saravenen</h1>
+        <p class="hero__role">Final-year Biomedical Sciences student, University of Example</p>
+        <p class="hero__lead">
+          I study how immune cells reshape the tissue around tumours. This portfolio collects my papers, articles, posters and the laboratory methods behind them.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#research">Read my research</a>
+          <a class="btn btn--ghost" href="documents/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        </div>
+      </div>
+
+      <!-- Decorative microscope field, drawn by js/field.js -->
+      <div class="scope" aria-hidden="true">
+        <canvas id="field"></canvas>
+        <svg class="scope__overlay" viewBox="0 0 100 100" focusable="false">
+          <g class="scope__ticks">
+            <line x1="50" y1="3" x2="50" y2="9" /><line x1="50" y1="91" x2="50" y2="97" />
+            <line x1="3" y1="50" x2="9" y2="50" /><line x1="91" y1="50" x2="97" y2="50" />
+            <line x1="47" y1="50" x2="53" y2="50" /><line x1="50" y1="47" x2="50" y2="53" />
+          </g>
+          <g class="scope__scale">
+            <line x1="64" y1="86" x2="82" y2="86" />
+            <text x="73" y="83.6" text-anchor="middle">50 µm</text>
+          </g>
+          <text class="scope__mag" x="18" y="86">400×</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ***** Pockets ***** -->
+    <div class="wrap pockets">
+
+      <!-- Research -->
+      <section class="pocket" id="research" aria-labelledby="research-title">
+        <div class="pocket__tab">
+          <h2 id="research-title">Research</h2>
+          <span class="pocket__count" data-count="publications"></span>
+        </div>
+        <div class="pocket__body">
+          <p class="pocket__intro">Papers, preprints and reviews, newest first. Every title links to the PDF.</p>
+
+          <div class="toolbar">
+            <div class="chips" id="pub-filters" role="group" aria-label="Filter by type"></div>
+            <div class="search">
+              <label class="sr-only" for="pub-search">Search publications</label>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7" /><path d="M13 13l4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></svg>
+              <input id="pub-search" type="search" placeholder="Search title, author or topic" autocomplete="off" />
+            </div>
+          </div>
+          <p class="results-status" id="pub-status" aria-live="polite"></p>
+
+          <ol class="pubs" id="pub-list"></ol>
+          <p class="empty" id="pub-empty" hidden>
+            No publications match that search.
+            <button class="btn btn--sm" type="button" id="pub-clear">Clear filters</button>
+          </p>
+        </div>
+      </section>
+
+      <!-- Writing -->
+      <section class="pocket pocket--7" id="writing" aria-labelledby="writing-title">
+        <div class="pocket__tab">
+          <h2 id="writing-title">Writing</h2>
+          <span class="pocket__count" data-count="articles"></span>
+        </div>
+        <div class="pocket__body">
+          <p class="pocket__intro">Articles for student and public audiences.</p>
+          <ul class="articles" id="article-list"></ul>
+        </div>
+      </section>
+
+      <!-- At a glance -->
+      <section class="pocket pocket--5" id="snapshot" aria-labelledby="snapshot-title">
+        <div class="pocket__tab">
+          <h2 id="snapshot-title">At a glance</h2>
+        </div>
+        <div class="pocket__body">
+          <dl class="glance" id="glance"></dl>
+
+          <h3 class="sub">Research interests</h3>
+          <ul class="tags">
+            <li>Tumour immunology</li>
+            <li>Biomaterials</li>
+            <li>Histopathology</li>
+            <li>Quantitative imaging</li>
+          </ul>
+
+          <h3 class="sub">Right now</h3>
+          <p class="compact">
+            Writing up my honours project on T-cell infiltration in engineered tumour models, and looking for PhD positions starting in 2027.
+          </p>
+        </div>
+      </section>
+
+      <!-- Posters and talks -->
+      <section class="pocket" id="posters" aria-labelledby="posters-title">
+        <div class="pocket__tab">
+          <h2 id="posters-title">Posters and talks</h2>
+          <span class="pocket__count" data-count="posters"></span>
+        </div>
+        <div class="pocket__body">
+          <ul class="posters" id="poster-list"></ul>
+        </div>
+      </section>
+
+      <!-- Methods -->
+      <section class="pocket pocket--5" id="methods" aria-labelledby="methods-title">
+        <div class="pocket__tab">
+          <h2 id="methods-title">Methods</h2>
+        </div>
+        <div class="pocket__body">
+          <h3 class="sub sub--first">Wet lab</h3>
+          <ul class="tags">
+            <li>Mammalian cell culture</li>
+            <li>Western blotting</li>
+            <li>qPCR</li>
+            <li>Immunofluorescence</li>
+            <li>Flow cytometry</li>
+            <li>ELISA</li>
+            <li>Histology and IHC</li>
+          </ul>
+
+          <h3 class="sub">Imaging</h3>
+          <ul class="tags">
+            <li>Confocal microscopy</li>
+            <li>Micro-CT</li>
+            <li>Fiji / ImageJ</li>
+            <li>QuPath</li>
+            <li>CellProfiler</li>
+          </ul>
+
+          <h3 class="sub">Data and analysis</h3>
+          <ul class="tags">
+            <li>R and Bioconductor</li>
+            <li>Python</li>
+            <li>GraphPad Prism</li>
+            <li>RNA-seq analysis</li>
+            <li>Experimental design</li>
+          </ul>
+
+          <h3 class="sub">Professional practice</h3>
+          <ul class="tags">
+            <li>Good laboratory practice</li>
+            <li>Biosafety and ethics training</li>
+            <li>Scientific writing</li>
+            <li>Zotero</li>
+            <li>Electronic lab notebooks</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Background -->
+      <section class="pocket pocket--7" id="background" aria-labelledby="background-title">
+        <div class="pocket__tab">
+          <h2 id="background-title">Background</h2>
+        </div>
+        <div class="pocket__body">
+          <ol class="timeline">
+            <li>
+              <time class="timeline__date">2023 to now</time>
+              <span class="timeline__rail" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3>BSc (Hons) Biomedical Sciences</h3>
+                <p class="timeline__where">University of Example</p>
+                <p>Predicted First. Modules in immunology, biomaterials and medical statistics. Honours project on T-cell infiltration in engineered tumour models.</p>
+              </div>
+            </li>
+            <li>
+              <time class="timeline__date">Summer 2025</time>
+              <span class="timeline__rail" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3>Research placement</h3>
+                <p class="timeline__where">Example Institute for Cancer Research, Cell Imaging Facility</p>
+                <p>Quantified macrophage markers in tissue sections and drafted the methods for a submitted manuscript.</p>
+              </div>
+            </li>
+            <li>
+              <time class="timeline__date">2024 to 2025</time>
+              <span class="timeline__rail" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3>Demonstrator, human anatomy practicals</h3>
+                <p class="timeline__where">University of Example</p>
+                <p>Supported first-year students through histology and microscopy sessions.</p>
+              </div>
+            </li>
+            <li>
+              <time class="timeline__date">2024 and 2025</time>
+              <span class="timeline__rail" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3>Awards</h3>
+                <p>Dean's List for academic performance. Undergraduate Research Bursary for the summer placement.</p>
+              </div>
+            </li>
+            <li>
+              <time class="timeline__date">2021 to 2023</time>
+              <span class="timeline__rail" aria-hidden="true"></span>
+              <div class="timeline__body">
+                <h3>A-levels</h3>
+                <p class="timeline__where">Example Sixth Form College</p>
+                <p>Biology, Chemistry and Mathematics.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="pocket pocket--7" id="about" aria-labelledby="about-title">
+        <div class="pocket__tab">
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="pocket__body about">
+          <img class="about__photo" src="images/profile-placeholder.svg" width="160" height="160" alt="Placeholder profile photo" />
+          <div class="about__text">
+            <p>
+              I'm a final-year Biomedical Sciences student who likes questions that sit between the bench and the clinic. My work so far looks at how immune cells behave inside tumours, and how engineered materials can help us model that.
+            </p>
+            <p>
+              Outside the lab I write about science for student audiences and mentor first-years through their first research projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="pocket pocket--5" id="contact" aria-labelledby="contact-title">
+        <div class="pocket__tab">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div class="pocket__body">
+          <p class="compact">Email is the best way to reach me. I'm glad to talk about collaborations, project supervision or a paper you'd like to discuss.</p>
+          <a class="btn btn--primary btn--block" href="mailto:kenisya.saravenen@example.ac.uk">kenisya.saravenen@example.ac.uk</a>
+
+          <ul class="links">
+            <li><a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener"><span>ORCID</span><span class="links__handle">0000-0000-0000-0000</span></a></li>
+            <li><a href="https://scholar.google.com/" target="_blank" rel="noopener"><span>Google Scholar</span><span class="links__handle">Citations profile</span></a></li>
+            <li><a href="https://www.researchgate.net/" target="_blank" rel="noopener"><span>ResearchGate</span><span class="links__handle">Kenisya-Saravenen</span></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LinkedIn</span><span class="links__handle">in/your-profile</span></a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener"><span>GitHub</span><span class="links__handle">your-username</span></a></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ***** Footer ***** -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>&copy; 2026 Kenisya Saravenen. All papers remain the property of their publishers and authors.</p>
+      <p>Last updated September 2026</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="M10 16V5M5 9.5L10 4.5l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/content.js"></script>
+  <script src="js/field.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
