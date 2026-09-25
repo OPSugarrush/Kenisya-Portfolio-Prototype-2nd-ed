@@ -15,6 +15,7 @@ window.PORTFOLIO = {
   me: "K. Saravenen",
 
   publications: [
+
     {
       type: "Journal article",
       year: 2026,
@@ -29,30 +30,17 @@ window.PORTFOLIO = {
       tags: ["macrophage", "tumour microenvironment", "immunofluorescence", "breast cancer"]
     },
     {
-      type: "Preprint",
-      year: 2026,
-      title: "Hydrogel stiffness tunes T-cell infiltration in a 3D tumour spheroid model",
-      authors: ["K. Saravenen", "P. Lindqvist", "S. Whitfield"],
-      venue: "bioRxiv (placeholder preprint)",
-      details: "",
-      doi: "10.0000/example.2026.preprint-02",
-      pdf: "documents/paper-02-hydrogel-spheroid.pdf",
-      summary: "Softer matrices let T cells reach the spheroid core; stiffer ones keep them at the edge.",
-      abstract: "Tumour stiffness is a barrier to immune infiltration, yet few in vitro models let stiffness be varied independently of composition. We embedded tumour spheroids in tunable polyethylene glycol hydrogels spanning 0.5 to 8 kPa and tracked T-cell movement by live imaging. Infiltration depth fell sharply above 4 kPa, and the effect was partly reversed by a matrix-softening enzyme.",
-      tags: ["biomaterials", "T cells", "spheroids", "hydrogel"]
-    },
-    {
-      type: "Conference paper",
+      type: "Academic Coursework",
       year: 2025,
-      title: "Automated nuclear segmentation in low-contrast histology images using a lightweight U-Net",
-      authors: ["R. Tanaka", "K. Saravenen"],
-      venue: "Proceedings of the Example Symposium on Biomedical Imaging",
-      details: "pp. 88–93",
-      doi: "10.0000/example.2025.symp-31",
-      pdf: "documents/paper-03-nuclear-segmentation.pdf",
-      summary: "A small segmentation model that runs on a laptop and holds up on faint, unevenly stained slides.",
-      abstract: "Nuclear segmentation underpins most quantitative histology, but stain variation and low contrast reduce accuracy of standard tools. We trained a lightweight U-Net with stain-augmentation on 1,200 annotated fields. It matched a larger baseline on well-stained slides and improved the F1 score by 9 percentage points on low-contrast slides, with a tenfold faster inference time.",
-      tags: ["deep learning", "histology", "image analysis"]
+      title: "Investigation of the Antibacterial Effects of Trimethoprim and Sulfamethoxazole Against E. coli",
+      authors: ["K. Saravenen"],
+      venue: "York University, BSc in Biomedical Sciences",
+      details: "tbd",
+      doi: "tbd",
+      pdf: "documents/TMP-SMX_Ecoli_Academic_Report_(Polished).pdf",
+      summary: "A lab report on the antibacterial effects of trimethoprim and sulfamethoxazole against E. coli.",
+      abstract: "tbd",
+      tags: ["antibiotics", "E. coli", "microbiology", "lab report"]
     },
     {
       type: "Review",
@@ -66,44 +54,18 @@ window.PORTFOLIO = {
       summary: "How ultracentrifugation, size-exclusion chromatography and immunocapture compare, and what each one costs you.",
       abstract: "Extracellular vesicles transport proteins and nucleic acids between immune cells, and the method used to isolate them shapes what is measured. This review compares ultracentrifugation, size-exclusion chromatography, precipitation and immunocapture in terms of yield, purity and reproducibility, and proposes a minimal reporting checklist for immunology studies.",
       tags: ["extracellular vesicles", "review", "methods"]
-    },
-    {
-      type: "Journal article",
-      year: 2025,
-      title: "Micro-CT quantification of bone remodelling around 3D-printed titanium scaffolds",
-      authors: ["S. Whitfield", "K. Saravenen", "J. Adeyemi"],
-      venue: "Placeholder Biomaterials Letters",
-      details: "7(1): e012",
-      doi: "10.0000/example.2025.bml-012",
-      pdf: "documents/paper-05-microct-scaffolds.pdf",
-      summary: "A repeatable micro-CT workflow for measuring new bone growth into porous implants.",
-      abstract: "Porous titanium scaffolds promote bone ingrowth, but comparing designs requires consistent quantification. We describe a micro-CT workflow covering scan settings, thresholding and region selection, and apply it to four lattice geometries in a rat femoral defect model. Gyroid lattices showed the highest bone volume fraction at 12 weeks.",
-      tags: ["micro-CT", "bone", "implants", "biomaterials"]
-    },
-    {
-      type: "Journal article",
-      year: 2024,
-      title: "Sex differences in microglial response after mild traumatic brain injury in mice",
-      authors: ["J. Adeyemi", "K. Saravenen", "K. Sørensen"],
-      venue: "Example Neuroimmunology Reports",
-      details: "3: 100–112",
-      doi: "10.0000/example.2024.nir-003",
-      pdf: "documents/paper-06-microglia-tbi.pdf",
-      summary: "Male and female mice showed different microglial activation timelines after the same mild injury.",
-      abstract: "Sex is rarely analysed as a biological variable in traumatic brain injury research. Using morphological analysis of microglia at 1, 7 and 28 days after mild injury, we found earlier activation and faster resolution in females, while males showed prolonged activation at 28 days. These differences were not explained by injury severity.",
-      tags: ["microglia", "neuroimmunology", "brain injury"]
     }
   ],
 
   articles: [
     {
-      title: "What a tumour's neighbours tell us about cancer",
-      outlet: "The Example Science Review",
+      title: "Second Brain Frotier: Can rewiring the gut microbiome help prevent Alzheimer's disease?",
+      outlet: "TBD",
       kind: "Feature",
-      date: "2026-06-12",
-      minutes: 6,
-      url: "https://example.com/articles/tumour-neighbours",
-      summary: "Why researchers are looking beyond cancer cells to the immune cells and tissue that surround them."
+      date: "tbd",
+      minutes: 15,
+      url: "tbd",
+      summary: "How the gut microbiome may influence neurodegeneration, and what we can do about it."
     },
     {
       title: "How I learned to read a paper in 20 minutes",
@@ -115,52 +77,34 @@ window.PORTFOLIO = {
       summary: "A practical routine for first-years: figures first, methods second, discussion last."
     },
     {
-      title: "Peer review, explained for first-years",
-      outlet: "University of Example Biosciences Blog",
+      title: "Molecular Photocopying: How Polymerase Chain Reaction (PCR) Amplifies the Code of Life",
+      outlet: "TBD",
       kind: "Explainer",
-      date: "2025-11-19",
-      minutes: 5,
-      url: "https://example.com/articles/peer-review",
-      summary: "What reviewers actually look for, and why a rejection is rarely the end of a paper."
-    },
-    {
-      title: "Why we still can't 3D-print a kidney",
-      outlet: "The Example Science Review",
-      kind: "Feature",
-      date: "2025-04-08",
-      minutes: 7,
-      url: "https://example.com/articles/print-a-kidney",
-      summary: "The engineering problem that matters most is not the printing but keeping the cells alive."
+      date: "TBD",
+      minutes: 8,
+      url: "tbd",
+      summary: "A clear explanation of how PCR works, its applications, and its impact on modern biology."
     }
   ],
 
   posters: [
     {
       kind: "Poster",
-      title: "Macrophage polarisation across tumour regions",
-      event: "Example Cancer Research Student Conference",
-      location: "Example City",
-      date: "2026-04",
-      award: "Best undergraduate poster",
-      file: "documents/poster-01-macrophage-polarisation.pdf"
-    },
-    {
-      kind: "Oral talk",
-      title: "Stiff or soft: tuning T-cell entry into spheroids",
-      event: "University of Example Research Showcase",
-      location: "University of Example",
-      date: "2026-06",
+      title: "Comparative efficacy of ICSI versus conventional IVF.",
+      event: "Tutoring",
+      location: "Welwyn Garden City, UK",
+      date: "2026-09",
       award: "",
-      file: "documents/slides-01-stiff-or-soft.pdf"
+      file: "documents/ICSI_vs_IVF_poster.pdf"
     },
     {
       kind: "Poster",
-      title: "Lightweight nuclear segmentation for histology",
-      event: "Example Symposium on Biomedical Imaging",
-      location: "Example City",
-      date: "2025-09",
-      award: "",
-      file: "documents/poster-02-nuclear-segmentation.pdf"
+      title: "River Water Quality Assessment",
+      event: "York University Research Showcase",
+      location: "York University",
+      date: "2025-11",
+      award: "Academic 1st Class",
+      file: "documents/River_Water_Quality_Poster.pdf"
     },
     {
       kind: "Lightning talk",
