@@ -41,19 +41,6 @@ window.PORTFOLIO = {
       summary: "A lab report on the antibacterial effects of trimethoprim and sulfamethoxazole against E. coli.",
       abstract: "tbd",
       tags: ["antibiotics", "E. coli", "microbiology", "lab report"]
-    },
-    {
-      type: "Review",
-      year: 2025,
-      title: "Extracellular vesicles as carriers of immune signals: a review of isolation methods",
-      authors: ["K. Saravenen", "L. Okafor"],
-      venue: "Example Reviews in Cell Biology",
-      details: "9(2): 45–67",
-      doi: "10.0000/example.2025.rev-07",
-      pdf: "documents/paper-04-vesicle-review.pdf",
-      summary: "How ultracentrifugation, size-exclusion chromatography and immunocapture compare, and what each one costs you.",
-      abstract: "Extracellular vesicles transport proteins and nucleic acids between immune cells, and the method used to isolate them shapes what is measured. This review compares ultracentrifugation, size-exclusion chromatography, precipitation and immunocapture in terms of yield, purity and reproducibility, and proposes a minimal reporting checklist for immunology studies.",
-      tags: ["extracellular vesicles", "review", "methods"]
     }
   ],
 
