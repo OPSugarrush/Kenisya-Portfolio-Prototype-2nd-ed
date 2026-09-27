@@ -38,9 +38,9 @@ window.PORTFOLIO = {
       title: "Second Brain Frotier: Can rewiring the gut microbiome help prevent Alzheimer's disease?",
       outlet: "TBD",
       kind: "Feature",
-      date: "tbd",
+      date: "2025-04-08",
       minutes: 15,
-      url: "tbd",
+      url: "https://example.com/articles/print-a-kidney",
       summary: "How the gut microbiome may influence neurodegeneration, and what we can do about it."
     },
     {
@@ -49,16 +49,16 @@ window.PORTFOLIO = {
       kind: "Blog",
       date: "2026-03-02",
       minutes: 10,
-      url: "",
+      url: "https://example.com/articles/print-a-kidney",
       summary: "A lighthearted exploration of the mycelial network and its potential for communication."
     },
     {
       title: "Molecular Photocopying: How Polymerase Chain Reaction (PCR) Amplifies the Code of Life",
       outlet: "",
       kind: "Explainer",
-      date: "",
+      date: "2025-04-08",
       minutes: 8,
-      url: "",
+      url: "https://example.com/articles/print-a-kidney",
       summary: "A clear explanation of how PCR works, its applications, and its impact on modern biology."
     }
   ],
