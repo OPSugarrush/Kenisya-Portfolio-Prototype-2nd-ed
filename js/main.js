@@ -9,8 +9,19 @@
     String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   const fmtDate = (iso, opts) => {
-    const d = new Date(iso.length === 7 ? iso + '-01' : iso);
-    return new Intl.DateTimeFormat('en-GB', { ...opts, timeZone: 'UTC' }).format(d);
+    if (!iso || !/^\d{4}(?:-\d{2})?(?:-\d{2})?$/.test(String(iso))) {
+      return iso ? String(iso).toUpperCase() : '';
+    }
+
+    const value = String(iso);
+    const d = new Date(value.length === 7 ? value + '-01' : value);
+
+    if (Number.isNaN(d.getTime())) return value;
+
+    return new Intl.DateTimeFormat('en-GB', {
+      ...opts,
+      timeZone: 'UTC'
+    }).format(d);
   };
 
   /* ---------- Toast ---------- */
