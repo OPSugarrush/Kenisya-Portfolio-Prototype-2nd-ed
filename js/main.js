@@ -203,7 +203,7 @@
     )
     .join('');
 
-  /* ---------- Posters and talks ---------- */
+  /* ---------- Posters ---------- */
 
   $('#poster-list').innerHTML = D.posters
     .map(
@@ -239,7 +239,7 @@
     [pubs.length, 'Publications'],
     [peerReviewed, 'Peer reviewed'],
     [D.articles.length, 'Articles written'],
-    [D.posters.length, 'Posters and talks']
+    [D.posters.length, 'Posters']
   ]
     .map(([n, label]) => `<div><dt>${esc(label)}</dt><dd>${n}</dd></div>`)
     .join('');
