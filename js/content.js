@@ -25,7 +25,7 @@ window.PORTFOLIO = {
       authors: ["K. Saravenen"],
       venue: "York University, BSc in Biomedical Sciences",
       details: "",
-      doi: "",
+      doi: "10.0000/example.2026.014",
       pdf: "documents/Investigation_of_the_Antibacterial-Effects_of_TMX_and_SMX_Against_E._coli.pdf",
       summary: "A lab report on the antibacterial effects of trimethoprim and sulfamethoxazole against E. coli.",
       abstract: "This study investigates the antibacterial effects of trimethoprim and sulfamethoxazole against E. coli.",
