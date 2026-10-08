@@ -71,7 +71,7 @@ window.PORTFOLIO = {
       location: "Welwyn Garden City, UK",
       date: "2026-09",
       award: "",
-      file: "documents/Comparative_Efficacy_of_ICSI_Versus_Conventional_IVF.pdf"
+      file: "documents/Comparative_Efficacy_of_ICSI_Versus_Conventional_IVF_Poster.pdf"
     },
     {
       kind: "Poster",
