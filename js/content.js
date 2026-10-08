@@ -26,7 +26,7 @@ window.PORTFOLIO = {
       venue: "York University, BSc in Biomedical Sciences",
       details: "",
       doi: "10.0000/example.2026.014",
-      pdf: "documents/Investigation_of_the_Antibacterial_Effects_of_TMP_and_SMX_Against_E._coli.pdf",
+      pdf: "documents/Investigation_of_the_Antibacterial_Effects_of_TMP_and_SMX_Against_E._Coli.pdf",
       summary: "A lab report on the antibacterial effects of trimethoprim and sulfamethoxazole against E. coli.",
       abstract: "This study investigates the antibacterial effects of trimethoprim and sulfamethoxazole against E. coli.",
       tags: ["antibiotics", "E. coli", "microbiology", "lab report"]
