@@ -66,7 +66,7 @@ window.PORTFOLIO = {
   posters: [
     {
       kind: "Poster",
-      title: "Comparative efficacy of ICSI versus conventional IVF.",
+      title: "Comparative efficacy of ICSI versus conventional IVF",
       event: "Tutoring",
       location: "Welwyn Garden City, UK",
       date: "2026-09",
