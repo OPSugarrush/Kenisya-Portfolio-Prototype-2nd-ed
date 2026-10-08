@@ -8,15 +8,15 @@ window.PORTFOLIO = {
     {
       type: "Perspectives Article",
       year: 2026,
-      title: "",
+      title: "To what extent can neuroplasticity be harnessed to promote functional recovery following a stroke?",
       authors: ["K. Saravenen"],
       venue: "",
       details: "",
       doi: "",
-      pdf: "",
-      summary: "",
-      abstract: "",
-      tags: [""]
+      pdf: "TBD",
+      summary: "Independent research exploring the mechanisms of neuroplasticity following stroke, including adaptive and maladaptive neural reorganisation and the potential for therapeutic interventions to promote functional recovery.",
+      abstract: "Currently being written...",
+      tags: ["neuroplasticity", "stroke", "rehabilitation", "neuroscience"]
     },
     {
       type: "Academic Coursework",
@@ -35,7 +35,7 @@ window.PORTFOLIO = {
 
   articles: [
     {
-      title: "Second Brain Frotier: Can rewiring the gut microbiome help prevent Alzheimer's disease?",
+      title: "Linking the Gut to the Brain",
       outlet: "TBD",
       kind: "Feature",
       date: "2026-07-29",
@@ -80,7 +80,7 @@ window.PORTFOLIO = {
       location: "York University",
       date: "2025-11",
       award: "Academic 1st Class",
-      file: "documents/River_Water_Quality_Assessment.pdf"
+      file: "documents/River_Water_Quality_Poster.pdf"
     }
   ]
 };
